@@ -1,16 +1,16 @@
 # TestApi
 
-To start your Phoenix app:
+Eine Api zum testen eigener Software an ein Qmatic System.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Start Phoenix endpoint with `mix phoenix.server`
+Zum Starten der Phoenix App:
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  * Dependencies(Abhängigkeiten) installieren mit `mix deps.get`
+  * Datenbank erstellen und einrichten `mix ecto.create && mix ecto.migrate`
+  * Phoenix Server(Endpunkte) starten mit `mix phoenix.server`
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+Die Endpunkte sollten nun unter [`localhost:4000`](http://localhost:4000) im Browser aufrufbar sein.
 
-## Learn more
+## Mehr Infos
 
   * Official website: http://www.phoenixframework.org/
   * Guides: http://phoenixframework.org/docs/overview
