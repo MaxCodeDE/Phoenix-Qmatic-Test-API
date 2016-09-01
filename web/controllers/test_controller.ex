@@ -11,23 +11,18 @@ defmodule TestApi.TestController do
     #IO.puts("Test")
     #send_resp(conn, 200, "test")        
       
-    demaPatienten = Map.new [{:data, [%{"id": "1", "wartenummer": "92483", "patient": "Anni Matör"} ,
+    demoPatienten = Map.new [{:data, [%{"id": "1", "wartenummer": "92483", "patient": "Anni Matör"} ,
                 %{"id": "2", "wartenummer": "12323", "patient": "Anna Nass"} ,
                 %{"id": "3", "wartenummer": "6254", "patient": "Bart Stoppel"} ] }]
 
-    render(conn, "index.json", tests: demaPatienten.data)
+    render(conn, "index.json", tests: demoPatienten.data)
   end
 
   def create(conn, %{"test" => test_params}) do
-    #changeset = Test.changeset(%Test{}, test_params)
-
-    IO.puts("TEST " <> test_params)
       
-    demaPatienten = Map.new [{:data, [%{"id": "1", "wartenummer": "92483", "patient": "Anni Matör"} ,
-                %{"id": "2", "wartenummer": "12323", "patient": "Anna Nass"} ,
-                %{"id": "3", "wartenummer": "6254", "patient": "Bart Stoppel"} ] }]
+    demoPatient = %{"id": "1", "wartenummer": "92483", "patient": "Anni Matör"}
 
-    render(conn, "index.json", tests: demaPatienten.data)
+    render(conn, "test.json", test: demoPatient)
   end
 
 end
