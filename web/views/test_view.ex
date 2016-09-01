@@ -2,7 +2,7 @@ defmodule TestApi.TestView do
   use TestApi.Web, :view
 
   def render("index.json", %{tests: tests}) do
-    %{data: render_many(tests, TestApi.TestView, "test.json")}
+    render_many(tests, TestApi.TestView, "test.json")
   end
 
   def render("show.json", %{test: test}) do

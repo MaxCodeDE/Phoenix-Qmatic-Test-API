@@ -8,7 +8,7 @@ defmodule TestApi.Router do
   scope "/", TestApi do
     pipe_through :api
 
-      resources "/test", TestController
+      resources "/test", TestController, only: [:index, :create]
 
   end
 
