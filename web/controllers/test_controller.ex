@@ -18,7 +18,7 @@ defmodule TestApi.TestController do
     render(conn, "index.json", tests: demoPatienten.data)
   end
 
-  def create(conn, %{"test" => test_params}) do
+  def create(conn, _params) do
       
     demoPatient = %{"id": "1", "wartenummer": "92483", "patient": "Anni Matör"}
 
